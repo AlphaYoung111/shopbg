@@ -4,6 +4,10 @@ const Login = () => import('@/components/Login')
 const Home = () => import('@/components/Home')
 const Welcome = () => import('@/components/Welcome')
 const Users = () => import('@/views/users/Users')
+const Rights = () => import('@/views/power/Rights')
+const Roles = () => import('@/views/power/Roles')
+const Categories = () => import('@/views/goods/Categories')
+const GoodParams = () => import('@/views/goods/GoodParams')
 
 Vue.use(VueRouter)
 
@@ -20,13 +24,30 @@ const routes = [{
     component: Home,
     redirect: '/welcome',
     children: [{
-      path: '/welcome',
-      component: Welcome
-    },
+        path: '/welcome',
+        component: Welcome
+      },
       {
         path: '/users',
-        component:Users
-    }]
+        component: Users
+      },
+      {
+        path: '/rights',
+        component: Rights
+      },
+      {
+        path: '/roles',
+        component: Roles
+      },
+      {
+        path: '/categories',
+        component: Categories
+      },
+      {
+        path: '/params',
+        component: GoodParams
+      }
+    ]
   },
 
 ]

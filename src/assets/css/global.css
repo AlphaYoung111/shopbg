@@ -4,6 +4,7 @@ body,
   margin: 0;
   padding: 0;
   height: 100%;
+  min-width: 1366px;
 }
 
 * {
@@ -34,4 +35,7 @@ body,
 }
 .el-pagination{
   margin-top: 15px;
+}
+.el-cascader {
+  width: 100%;
 }
